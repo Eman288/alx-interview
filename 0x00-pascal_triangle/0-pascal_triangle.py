@@ -13,7 +13,7 @@ def pascal_triangle(n):
         return []
     mylist = []
     mylist.insert(0, [1])
-    for i in range(1, 5):
+    for i in range(1, n):
         oldlist = mylist[i - 1]
         newlist = []
         for j in range(i + 1):
