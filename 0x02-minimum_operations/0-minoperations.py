@@ -8,7 +8,7 @@ def minOperations(n: int) -> int:
     """
     s = 0
     i = 0
-    if n <= 0:
+    if n <= 1:
         return 0
     while n % 2 == 0:
         s += 2
