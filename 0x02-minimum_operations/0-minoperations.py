@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/epython3
 """a module to complete the minimum operations challenge"""
 
 
