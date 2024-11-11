@@ -29,13 +29,16 @@ def solveNQueens(n):
 
         for col in range(n):
             # Check if the column or diagonals are attacked
-            if attacked_columns[col] or attacked_diag1[row - col + n - 1]
-            or attacked_diag2[row + col]:
+            if (
+                attacked_columns[col]
+                or attacked_diag1[row - col + n - 1]
+                or attacked_diag2[row + col]
+            ):
                 continue
 
             # Place queen on the current row, column
             current_solution[row] = col
-            attacked_columns[col] = attacked_diag1[row - col + n - 1] = False
+            attacked_columns[col] = attacked_diag1[row - col + n - 1] = True
             attacked_diag2[row + col] = True
 
             # Move to the next row
