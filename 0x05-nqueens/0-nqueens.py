@@ -30,9 +30,9 @@ def solveNQueens(n):
         for col in range(n):
             # Check if the column or diagonals are attacked
             if (
-                attacked_columns[col]
-                or attacked_diag1[row - col + n - 1]
-                or attacked_diag2[row + col]
+                attacked_columns[col] or
+                attacked_diag1[row - col + n - 1] or
+                attacked_diag2[row + col]
             ):
                 continue
 
