@@ -8,6 +8,8 @@ def makeChange(coins, total):
     """
         a function to return the least number of coins needed to get the total
     """
+    if total <= 0:
+        return 0
     coins.sort()
     coins.reverse()
     n = len(coins)
